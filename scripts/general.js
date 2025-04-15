@@ -211,6 +211,7 @@ function cargarDatos() {
     listaLocal.forEach(usuarioLocal => {
         listaUsuarios.push(usuarioLocal);
     });
+    actualizarLocal(usuarioActual, listaUsuarios);
 }
 
 //localStorage.clear();
