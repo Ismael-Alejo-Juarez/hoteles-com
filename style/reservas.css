@@ -1,0 +1,82 @@
+#contenedor-resumen{
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto 35%;
+}
+
+#mensaje-reserva-vacio{
+    margin-top: 50px;
+    text-align: center;
+    display: none;
+}
+
+.registro-reservas{
+    background-color: #e6eceb;
+}
+
+.registro-total{
+    border: 1px solid #a0c5cf;
+    background-color: #e6eceb;
+    margin: 10px 10px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#total-pagar{
+    text-align: right;
+}
+
+.reserva{
+    border: 1px solid #a0c5cf;
+    background-color: #FFF;
+    margin: 10px;
+    display: grid; /*Es grid*/
+    grid-template-columns: 40% auto;
+}
+
+.img-reserva{
+    border-right: 1px solid #a0c5cf;    
+}
+
+.txt-reserva{
+    margin: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.precio-reserva{
+    text-align: right;
+}
+
+#contenedor-mensaje{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none; /*Original es flex*/
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmar{
+    border: 1px solid #a0c5cf;
+    background-color: #FFF;
+    padding: 50px;
+    text-align: center;
+    backdrop-filter: blur(50px);
+}
+
+.btn-habitacion{
+    margin: 10px 0;
+}
+
+#espacio-tarjetas{
+    display: flex;
+    flex-direction: column;
+
+    button{
+        margin-bottom: 10px;
+    }
+}

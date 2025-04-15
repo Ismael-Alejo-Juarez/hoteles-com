@@ -1,0 +1,48 @@
+
+/* Puede que todo esto se repita en los otros formularios */
+#contenedor-sesion{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px 0;
+}
+
+.contenedor-form{
+    border: 1px solid #a0c5cf;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: #e6eceb;
+}
+
+.parte-inputs{
+    text-align: left;
+    margin: 10px 0;
+}
+
+.input-form{
+    width: 400px;
+    padding: 5px 3px;
+    margin: 10px 0;
+}
+
+.parte-btn{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/*El nombre lo dice*/
+.error-span{
+    display: none;
+    color: red;
+}
+
+#cancelar-btn, #aceptar-btn, #rg-cancelar-btn, #rg-aceptar-btn, #tr-cancelar-btn, #tr-aceptar-btn{
+    padding: 3px 20px;
+    margin: 0 10px;
+}
+
+/*Puede que sea lo mismo en todos los formularios*/

@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/*Esto se va a repetir en todas las paginas de html*/
+@font-face {
+    font-family: "Jost-Regular";
+    src: url(../fonts/Jost-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Jost-Bold";
+    src: url(../fonts/Jost-Bold.ttf);
+}
+
+.fuente-general {
+    font-family: "Jost-Regular";
+}
+
+.fuente-titulos {
+    font-family: "Jost-Bold";
+    font-size: 25px;
+}
+
+.fuente-peque {
+    font-size: 14px;
+}
+
+.fuente-media {
+    font-size: 16px;
+}
+
+.fuente-grande {
+    font-size: 20px;
+}
+
+#header {
+    background-color: #0093b7;
+    height: 50px;
+
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-header {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+.icono-header {
+    color: #FFF;
+    text-decoration: none;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.logo-hotel {
+    left: 20px;
+}
+
+.img-logo {
+    margin-right: 10px;
+    background-image: url(../icons/building.png);
+}
+
+#carrito-res {
+    display: none;
+    right: 170px;
+}
+
+.img-reservas {
+    margin-left: 10px;
+    background-image: url(../icons/shopping-cart-buyer.png);
+}
+
+.iniciar-sesion {
+    right: 30px;
+}
+
+.img-sesion {
+    margin-left: 10px;
+    background-image: url(../icons/user.png);
+}
+
+/* Esta propiedad sera para todos los main de todos los html */
+#main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+    background-color: #005f89;
+    height: 50px;
+}
+
+/* A partir de aqui todo es propio del html - index*/
