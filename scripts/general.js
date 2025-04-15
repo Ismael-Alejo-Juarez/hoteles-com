@@ -2,24 +2,7 @@
 const iconoSesion = document.getElementById("icono-sesion");
 const iconoReservas = document.getElementById("carrito-res");
 //Creacion y manejo de usuarios.
-const listaUsuarios = [
-    {
-        "usuario": "IsmaelAlejo",
-        "correo": "ismael@gmail.com",
-        "pass": "ismael",
-        "telefono": "",
-        "tarjetas": [],
-        "reservaciones": []
-    },
-    {
-        "usuario": "Luis Carlos",
-        "correo": "luiscarlos@gmail.com",
-        "pass": "luiscarlos",
-        "telefono": "",
-        "tarjetas": [],
-        "reservaciones": []
-    }
-];
+const listaUsuarios = [];
 //Manejo del usuario actual.
 let usuarioActual = {};
 
@@ -205,7 +188,25 @@ function actualizarLocal(actual, lista) {
 }
 
 function cargarDatos() {
-    const listaLocal = JSON.parse(localStorage.getItem("Usuarios")) || [];
+    const listaLocal = JSON.parse(localStorage.getItem("Usuarios")) || [
+        //Datos cargados al cargar la pagina
+        {
+            "usuario": "IsmaelAlejo",
+            "correo": "ismael@gmail.com",
+            "pass": "ismael",
+            "telefono": "",
+            "tarjetas": [],
+            "reservaciones": []
+        },
+        {
+            "usuario": "Luis Carlos",
+            "correo": "luiscarlos@gmail.com",
+            "pass": "luiscarlos",
+            "telefono": "",
+            "tarjetas": [],
+            "reservaciones": []
+        }
+    ];
     usuarioActual = JSON.parse(localStorage.getItem("Actual")) || {};
     listaLocal.forEach(usuarioLocal => {
         listaUsuarios.push(usuarioLocal);
