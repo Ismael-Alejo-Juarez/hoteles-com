@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/principal.css">
+    <link rel="shortcut icon" href="icons/building.png" type="image/x-icon">
+    <title> Hotel - Pagina Principal</title>
+</head>
+
+<body>
+    <!-- Este es un mensaje que estara oculto hasta que se presione un boton -->
+    <div id="contenedor-mensaje">
+        <div class="confirmar">
+            <span id="mensaje" class="fuente-general fuente-grande"> Debes iniciar sesion para guardar reservaciones </span> <br>
+            <div class="btn-habitacion">
+                <button type="button" id="btn-continuar" class="fuente-general fuente-media">Continuar explorando</button>
+                <a id="ir-a" href="html/sesion.html">
+                    <button type="button" id="btn-reservaciones" class="fuente-general fuente-media">Iniciar sesion</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Fin del contenedor oculto -->
+    <header id="header">
+        <a href="index.html" class="logo-hotel icono-header">
+            <div class="img-header img-logo"></div>
+            <span class="fuente-general fuente-titulos"> Hotel </span>
+        </a>
+        <!-- Este icono estara oculto hasta que se inicie sesion -->
+        <a href="html/reservas.html" id="carrito-res" class="icono-header">
+            <span class="fuente-general fuente-media"> Mis reservaciones</span>
+            <div class="img-header img-reservas"></div>
+        </a>
+        <!-- Fin -->
+        <a href="html/sesion.html" id="icono-sesion" class="iniciar-sesion icono-header">
+            <span class="fuente-general fuente-media"> Mi cuenta </span>
+            <div class="img-header img-sesion"></div>
+        </a>
+    </header>
+    <main id="main">
+        <div class="cuerpo-pagina">
+            <div class="contenedor-especial">
+                <div class="frase-contenedor">
+                    <span class="fuente-general fuente-titulos"> (frase para que los clientes se queden) </span> <br>
+                    <span class="fuente-general fuente-grande"> Comienza a explorar 🡣</span>
+                </div>
+            </div>
+            <div class="contenedor-especial">
+                <p class="contenedor-titulo fuente-general fuente-titulos">Ofertas</p>
+                <div class="contenedor-habitaciones">
+                    <div class="habitacion-especial">
+                        <div class="img-habitacion"></div>
+                        <div class="txt-habitacion">
+                            <span class="hbt-titulo fuente-general fuente-grande">(nombre del hotel)</span> <br>
+                            <span class="hbt-detalle fuente-general fuente-peque">(categoria)</span> <br>
+                            <span class="hbt-detalle fuente-general fuente-peque">(ubicacion)</span> <br>
+                            <span class="hbt-detalle fuente-general fuente-peque">(capacidad)</span> <br>
+                            <span class="hbt-precio-antes fuente-general fuente-media">(precio de antes)</span>
+                            <span class="hbt-precio-despues fuente-general fuente-grande">(precio de la
+                                habitacion)</span>
+                        </div>
+                        <div class="btn-habitacion">
+                            <button type="button" id="reservar-hbt-1"
+                                class="btn-reservar fuente-general fuente-grande">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-general">
+                <p class="contenedor-titulo fuente-general fuente-titulos">Para tus vacaciones</p>
+                <div class="contenedor-habitaciones">
+                    <div class="habitacion-especial">
+                        <div class="img-habitacion"></div>
+                        <div class="txt-habitacion">
+                            <span class="hbt-titulo fuente-general fuente-grande">(nombre del hotel)</span> <br>
+                            <span class="hbt-detalle fuente-general fuente-peque">(categoria)</span> <br>
+                            <span class="hbt-detalle fuente-general fuente-peque">(ubicacion)</span> <br>
+                            <span class="hbt-detalle fuente-general fuente-peque">(capacidad)</span> <br>
+                            <span class="hbt-precio-antes fuente-general fuente-media">(precio de antes)</span>
+                            <span class="hbt-precio-despues fuente-general fuente-grande">(precio de la
+                                habitacion)</span>
+                        </div>
+                        <div class="btn-habitacion">
+                            <button type="button" id="reservar-hbt-2"
+                                class="btn-reservar fuente-general fuente-grande">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-general contenedor-oculto">
+                <p class="contenedor-titulo fuente-general fuente-titulos">Para las familias</p>
+                <div class="contenedor-habitaciones">
+                    <div class="habitacion-especial">
+                        <div class="img-habitacion"></div>
+                        <div class="txt-habitacion">
+                            <span class="hbt-titulo fuente-general fuente-grande">(nombre del hotel)</span> <br>
+                            <span class="hbt-detalle fuente-general fuente-peque">(categoria)</span> <br>
+                            <span class="hbt-detalle fuente-general fuente-peque">(ubicacion)</span> <br>
+                            <span class="hbt-detalle fuente-general fuente-peque">(capacidad)</span> <br>
+                            <span class="hbt-precio-antes fuente-general fuente-media">(precio de antes)</span>
+                            <span class="hbt-precio-despues fuente-general fuente-grande">(precio de la
+                                habitacion)</span>
+                        </div>
+                        <div class="btn-habitacion">
+                            <button type="button" id="reservar-hbt-3"
+                                class="btn-reservar fuente-general fuente-grande">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-general contenedor-oculto">
+                <p class="contenedor-titulo fuente-general fuente-titulos">Con vistas hermosas</p>
+                <div class="contenedor-habitaciones">
+                    <div class="habitacion-especial">
+                        <div class="img-habitacion"></div>
+                        <div class="txt-habitacion">
+                            <span class="hbt-titulo fuente-general fuente-grande">(nombre del hotel)</span> <br>
+                            <span class="hbt-detalle fuente-general fuente-peque">(categoria)</span> <br>
+                            <span class="hbt-detalle fuente-general fuente-peque">(ubicacion)</span> <br>
+                            <span class="hbt-detalle fuente-general fuente-peque">(capacidad)</span> <br>
+                            <span class="hbt-precio-antes fuente-general fuente-media">(precio de antes)</span>
+                            <span class="hbt-precio-despues fuente-general fuente-grande">(precio de la
+                                habitacion)</span>
+                        </div>
+                        <div class="btn-habitacion">
+                            <button type="button" id="reservar-hbt-4"
+                                class="btn-reservar fuente-general fuente-grande">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-general">
+                <div id="div-vermas" class="btn-habitacion">
+                    <button type="button" id="btn-vermas" class="fuente-general fuente-grande">Seguir
+                        explorando</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script src="scripts/general.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
