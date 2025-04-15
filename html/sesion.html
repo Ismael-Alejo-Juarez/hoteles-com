@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/formulario.css">
+    <title>Hotel - Inicio de Sesion</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="../index.html" class="logo-hotel icono-header">
+            <div class="img-header img-logo"></div>
+            <span class="fuente-general fuente-titulos"> Hotel </span>
+        </a>
+        <!-- Este icono estara oculto hasta que se inicie sesion -->
+        <a href="reservas.html" id="carrito-res" class="icono-header">
+            <span class="fuente-general fuente-media"> Mis reservaciones</span>
+            <div class="img-header img-reservas"></div>
+        </a>
+        <!-- Fin -->
+        <a href="sesion.html" id="icono-sesion" class="iniciar-sesion icono-header">
+            <span class="fuente-general fuente-media"> Mi cuenta </span>
+            <div class="img-header img-sesion"></div>
+        </a>
+    </header>
+    <main id="main">
+        <div id="contenedor-sesion">
+            <div class="contenedor-form">
+                <form action="">
+                    <span class="fuente-general fuente-titulos"> Inicio de sesion </span>
+                    <div class="parte-inputs">
+                        <label class="fuente-general fuente-grande label-form">Ingresa tu usuario: </label>
+                        <br>
+                        <input type="text" name="usuario" id="usuario-txt"
+                            class="input-form fuente-general fuente-media">
+                        <br>
+                        <label class="fuente-general fuente-grande label-form"> Ingresa tu contrasena: </label>
+                        <br>
+                        <input type="password" name="password" id="password-txt"
+                            class="input-form fuente-general fuente-media">
+                        <br>
+                    </div>
+                    <span id="text-error" class="error-span fuente-general fuente-media">### Error ###</span>
+                    <div class="parte-btn">
+                        <a href="../index.html">
+                            <button type="button" id="cancelar-btn"
+                                class="fuente-general fuente-grande">Cancelar</button>
+                        </a>
+                        <button type="button" id="aceptar-btn" class="fuente-general fuente-grande">Aceptar</button>
+                    </div>
+                    <span class="fuente-general fuente-media">No tienes cuenta? <a href="registro.html"> Crear una
+                        </a></span>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script src="../scripts/general.js"></script>
+    <script src="../scripts/sesion.js"></script>
+</body>
+
+</html>

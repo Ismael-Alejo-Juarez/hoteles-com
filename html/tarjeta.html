@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/formulario.css">
+    <title>Hotel - Crear cuenta</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="../index.html" class="logo-hotel icono-header">
+            <div class="img-header img-logo"></div>
+            <span class="fuente-general fuente-titulos"> Hotel </span>
+        </a>
+        <!-- Este icono estara oculto hasta que se inicie sesion -->
+        <a href="reservas.html" id="carrito-res" class="icono-header">
+            <span class="fuente-general fuente-media"> Mis reservaciones</span>
+            <div class="img-header img-reservas"></div>
+        </a>
+        <!-- Fin -->
+        <a href="sesion.html" class="iniciar-sesion icono-header">
+            <span class="fuente-general fuente-media"> Mi cuenta </span>
+            <div class="img-header img-sesion"></div>
+        </a>
+    </header>
+    <main id="main">
+        <div id="contenedor-sesion">
+            <div class="contenedor-form">
+                <form action="">
+                    <span class="fuente-general fuente-titulos"> Agregar tarjeta </span>
+                    <div class="parte-inputs">
+                        <label class="fuente-general fuente-grande label-form"> Numero de tarjeta: </label>
+                        <br>
+                        <input type="text" name="numbercard" id="numbercard-txt"
+                            class="input-form fuente-general fuente-media">
+                        <br>
+                        <span id="text-error-card" class="error-span fuente-general fuente-media">### Error ###</span>
+                        <br>
+                        <label class="fuente-general fuente-grande label-form"> Vencimiento: </label>
+                        <br>
+                        <input type="text" name="vencimiento" id="vencimiento-txt"
+                            class="input-form fuente-general fuente-media">
+                        <br>
+                        <span id="text-error-vencimiento" class="error-span fuente-general fuente-media">### Error
+                            ###</span>
+                        <br>
+                        <label class="fuente-general fuente-grande label-form"> Codigo de seguridad (CVV): </label>
+                        <br>
+                        <input type="text" name="cvv" id="cvv-txt" class="input-form fuente-general fuente-media">
+                        <br>
+                        <span id="text-error-cvv" class="error-span fuente-general fuente-media">### Error ###</span>
+                        <br>
+                        <label class="fuente-general fuente-grande label-form"> Numero de telefono: </label>
+                        <br>
+                        <input type="tel" name="telefono" id="telefono-txt"
+                            class="input-form fuente-general fuente-media">
+                        <br>
+                        <span id="text-error-tel" class="error-span fuente-general fuente-media">### Error ###</span>
+                        <br>
+                    </div>
+                    <div class="parte-btn">
+                        <a href="reservas.html">
+                            <button type="button" id="tr-cancelar-btn"
+                                class="fuente-general fuente-grande">Cancelar</button>
+                        </a>
+                        <button type="button" id="tr-aceptar-btn" class="fuente-general fuente-grande">Aceptar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script src="../scripts/general.js"></script>
+    <script src="../scripts/tarjeta.js"></script>
+</body>
+
+</html>

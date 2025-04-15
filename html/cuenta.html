@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/cuenta.css">
+    <link rel="shortcut icon" href="../icons/building.png" type="image/x-icon">
+    <title>Hotel - Mi cuenta</title>
+</head>
+
+<body>
+    <div id="espacio-tarjetas">
+        <div class="contenedor-tarjetas">
+            <span class="fuente-general fuente-titulos">Tarjetas registradas</span>
+            <div id="lista-tarjetas">
+                <span id="tarjeta-vacio" class="tarjeta fuente-general fuente-grande">No hay tarjetas registradas</span>
+                <!--
+                <p class="tarjeta"> El ID se le asigna al momento de guardar
+                    <span class="fuente-general fuente-grande">
+                        No. 1234123412341234
+                        <button class="btn-eliminar fuente-general fuente-media">Eliminar</button>
+                    </span>
+                </p>
+                -->
+            </div>
+            <button id="btn-volver" type="button" class="fuente-general fuente-grande"> Volver </button>
+        </div>
+    </div>
+    <header id="header">
+        <a href="../index.html" class="logo-hotel icono-header">
+            <div class="img-header img-logo"></div>
+            <span class="fuente-general fuente-titulos"> Hotel </span>
+        </a>
+        <!-- Este icono estara oculto hasta que se inicie sesion -->
+        <a href="reservas.html" id="carrito-res" class="icono-header">
+            <span class="fuente-general fuente-media"> Mis reservaciones</span>
+            <div class="img-header img-reservas"></div>
+        </a>
+        <!-- Fin -->
+        <a href="sesion.html" id="icono-sesion" class="iniciar-sesion icono-header">
+            <span class="fuente-general fuente-media"> Mi cuenta </span>
+            <div class="img-header img-sesion"></div>
+        </a>
+    </header>
+    <main id="main">
+        <div class="contenedor-formulario">
+            <div class="todos-datos">
+                <span class="fuente-general fuente-titulos">Datos de tu cuenta</span>
+                <div id="formulario">
+                    <label class="fuente-general fuente-grande" for="">Usuario: </label>
+                    <input id="in-usuario" class="fuente-general fuente-grande" type="text">
+                    <label class="fuente-general fuente-grande" for="">Direccion email: </label>
+                    <input id="in-correo" class="fuente-general fuente-grande" type="text">
+                    <label class="fuente-general fuente-grande" for="">Contrasena: </label>
+                    <input id="in-pass" class="fuente-general fuente-grande" type="password">
+                    <label class="fuente-general fuente-grande" for="">Numero de telefono: </label>
+                    <input id="in-telefono" class="fuente-general fuente-grande" type="text">
+                    <label class="fuente-general fuente-grande" for="">Tarjetas agregadas: </label>
+                    <button id="ver-tarjetas" class="fuente-general fuente-grande" type="button">Ver tarjetas</button>
+                </div>
+                <div class="seccion-btn">
+                    <a href="../index.html">
+                        <button type="button" id="volver-btn" class="fuente-general fuente-grande">Volver</button>
+                    </a>
+                    <a>
+                        <button type="button" id="guardar-btn" class="fuente-general fuente-grande" onclick="guardarCambios()">Guardar
+                            cambios</button>
+                        <button type="button" id="salir-btn" class="fuente-general fuente-grande" onclick="salirCuenta()"> Salir </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script src="../scripts/general.js"></script>
+    <script src="../scripts/cuenta.js"></script>
+</body>
+
+</html>

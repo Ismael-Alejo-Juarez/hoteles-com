@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/formulario.css">
+    <title>Hotel - Crear cuenta</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="../index.html" class="logo-hotel icono-header">
+            <div class="img-header img-logo"></div>
+            <span class="fuente-general fuente-titulos"> Hotel </span>
+        </a>
+        <!-- Este icono estara oculto hasta que se inicie sesion -->
+        <a href="reservas.html" id="carrito-res" class="icono-header">
+            <span class="fuente-general fuente-media"> Mis reservaciones</span>
+            <div class="img-header img-reservas"></div>
+        </a>
+        <!-- Fin -->
+        <a href="sesion.html" class="iniciar-sesion icono-header">
+            <span class="fuente-general fuente-media"> Mi cuenta </span>
+            <div class="img-header img-sesion"></div>
+        </a>
+    </header>
+    <main id="main">
+        <div id="contenedor-sesion">
+            <div class="contenedor-form">
+                <div>
+                    <span class="fuente-general fuente-titulos"> Crear cuenta </span>
+                    <div class="parte-inputs">
+                        <label class="fuente-general fuente-grande label-form"> Crea un usuario: </label>
+                        <br>
+                        <input type="text" name="usuario" id="new-usuario-txt"
+                            class="input-form fuente-general fuente-media">
+                        <br>
+                        <span id="text-error-new-user" class="error-span fuente-general fuente-media">### Error
+                            ###</span>
+                        <br>
+                        <label class="fuente-general fuente-grande label-form"> Escribe tu direccion email: </label>
+                        <br>
+                        <input type="email" name="email" id="email-txt" class="input-form fuente-general fuente-media">
+                        <br>
+                        <span id="text-error-email" class="error-span fuente-general fuente-media">### Error ###</span>
+                        <br>
+                        <label class="fuente-general fuente-grande label-form"> Crea tu contrasena: </label>
+                        <br>
+                        <input type="password" name="password" id="create-password-txt"
+                            class="input-form fuente-general fuente-media">
+                        <br>
+                        <span id="text-error-pass" class="error-span fuente-general fuente-media">### Error ###</span>
+                        <br>
+                        <label class="fuente-general fuente-grande label-form"> Confirma tu contrasena: </label>
+                        <br>
+                        <input type="password" name="confirm-password" id="confirm-password-txt"
+                            class="input-form fuente-general fuente-media">
+                        <br>
+                        <span id="text-error-confirm-pass" class="error-span fuente-general fuente-media">### Error
+                            ###</span>
+                        <br>
+                    </div>
+                    <span id="cuenta-creada" class="error-span fuente-general fuente-media"> La cuenta ha sido creada </span>
+                    <div class="parte-btn">
+                        <a href="sesion.html">
+                            <button type="button" id="rg-cancelar-btn"
+                                class="fuente-general fuente-grande">Volver</button>
+                        </a>
+                        <a>
+                            <button type="button" id="rg-aceptar-btn"
+                                class="fuente-general fuente-grande">Aceptar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script src="../scripts/general.js"></script>
+    <script src="../scripts/registro.js"></script>
+</body>
+
+</html>

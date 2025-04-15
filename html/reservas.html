@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/reservas.css">
+    <title>Hotel - Carro de reservas</title>
+</head>
+
+<body>
+    <!-- Este es un mensaje que estara oculto hasta que se presione un boton -->
+    <div id="contenedor-mensaje">
+        <div class="confirmar">
+            <div id="espacio-tarjetas">
+                <!-- En caso que se agreguen tarjetas, intentare obtenerlas desde un objeto
+                <button type="button" class="boton-pagar fuente-general fuente-media">(numero de tarjeta)</button>
+                Los botones tendran esta estructura -->
+            </div>
+            <div class="btn-habitacion">
+                <button type="button" id="btn-aceptar" class="fuente-general fuente-media">Cancelar</button>
+                <a href="tarjeta.html">
+                    <button type="button" id="btn-reservaciones" class="fuente-general fuente-media">Agregar
+                        tarjeta</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Fin del contenedor oculto -->
+    <header id="header">
+        <a href="../index.html" class="logo-hotel icono-header">
+            <div class="img-header img-logo"></div>
+            <span class="fuente-general fuente-titulos"> Hotel </span>
+        </a>
+        <!-- Este icono estara oculto hasta que se inicie sesion -->
+        <a href="reservas.html" id="carrito-res" class="icono-header">
+            <span class="fuente-general fuente-media"> Mis reservaciones</span>
+            <div class="img-header img-reservas"></div>
+        </a>
+        <!-- Fin -->
+        <a href="sesion.html" id="icono-sesion" class="iniciar-sesion icono-header">
+            <span class="fuente-general fuente-media"> Mi cuenta </span>
+            <div class="img-header img-sesion"></div>
+        </a>
+    </header>
+    <main id="main">
+        <div id="contenedor-resumen">
+            <div class="registro-reservas">
+                <!-- Si no hay nada en reservaciones -->
+                <div id="mensaje-reserva-vacio">
+                    <span class="fuente-general fuente-grande">Aun no has agregado nada a tus reservas</span> <br>
+                    <a href="../index.html">
+                        <button class="fuente-general fuente-grande"> Agregar habitaciones </button>
+                    </a>
+                </div>
+                <!-- Fin de esto -->
+                <!-- El plan es que cada una de estas cosas salga de un objeto -->
+                <!-- Los divs tienen diferentes id's -->
+                <!--
+                <div class="reserva">
+                    <div class="img-reserva"></div>
+                    <div class="txt-reserva">
+                        <span class="titulo-reserva fuente-general fuente-grande"> (nombre de la habitacion) </span>
+                        <span class="detalle-reserva fuente-general fuente-media"> (categoria) </span>
+                        <span class="detalle-reserva fuente-general fuente-media"> (ubicacion) </span>
+                        <span class="detalle-reserva fuente-general fuente-media"> (capacidad) </span>
+                        <span class="precio-reserva fuente-general fuente-grande"> <button id="eliminar-reserva"
+                                class="fuente-general fuente-peque">Eliminar</button> (precio) </span>
+                    </div>
+                </div>
+                -->
+            </div>
+            <div class="registro-total">
+                <span class="fuente-general fuente-grande">Resumen</span>
+                <button id="btn-pagar" class="fuente-general fuente-grande">Proceder al pago</button>
+                <span id="cantidad-productos" class="fuente-general fuente-media">0 productos</span>
+                <span class="fuente-general fuente-grande">Total a pagar</span>
+                <span id="total-pagar" class="fuente-general fuente-titulos"> (total a pagar) </span>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script src="../scripts/general.js"></script>
+    <script src="../scripts/reservas.js"></script>
+</body>
+
+</html>
