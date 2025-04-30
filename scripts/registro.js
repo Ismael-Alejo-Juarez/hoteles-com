@@ -39,11 +39,16 @@ function validarDatos() {
             contadorPasa++;
             errorUsuario.style.display = "none";
         } else {
-            errorUsuario.textContent = "El usuario ya esta en uso.";
+            errorUsuario.textContent = "El usuario ya está en uso.";
             errorUsuario.style.display = "block";
         }
     } else {
-        errorUsuario.textContent = "El usuario no es valido.";
+        // ¿Por qué no es válido?
+        if(rgUsuario.length < 5){
+            errorUsuario.textContent = "El usuario debe tener más de 5 caracteres.";
+        }else{
+            errorUsuario.textContent = "El usuario no es válido.";
+        }
         errorUsuario.style.display = "block";
     }
     //Validar correo
@@ -54,11 +59,11 @@ function validarDatos() {
             contadorPasa++;
             errorCorreo.style.display = "none";
         } else {
-            errorCorreo.textContent = "El correo ya esta en uso.";
+            errorCorreo.textContent = "El correo ya está en uso.";
             errorCorreo.style.display = "block";
         }
     } else {
-        errorCorreo.textContent = "El correo no es valido.";
+        errorCorreo.textContent = "El correo no es válido.";
         errorCorreo.style.display = "block";
     }
     //Validar password y su confirmacion
@@ -69,12 +74,12 @@ function validarDatos() {
             contadorPasa++;
             errorConfirm.style.display = "none";
         }else{
-            errorConfirm.textContent = "Las contrasenas no coinciden.";
+            errorConfirm.textContent = "Las contraseñas no coinciden.";
             errorConfirm.style.display = "block";
         }
         errorPass.style.display = "none";
     }else{
-        errorPass.textContent = "Contrasena no valida.";
+        errorPass.textContent = "La contraseña debe ser tener más de 5 caracteres.";
         errorPass.style.display = "block";
     }
 
