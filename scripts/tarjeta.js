@@ -35,7 +35,11 @@ function validarDatos() {
             errorNumero.style.display = "block";
         }
     } else {
-        errorNumero.textContent = "Esta tarjeta no es valida.";
+        if (numeroT.includes("-")) {
+            errorNumero.textContent = "El formato es incorrecto.";
+        } else if (numeroT.length != 16) {
+            errorNumero.textContent = "El número consta de 16 dígitos.";
+        }
         errorNumero.style.display = "block";
     }
 
@@ -43,7 +47,7 @@ function validarDatos() {
         contadorBuenas++;
         errorVencimiento.style.display = "none";
     } else {
-        errorVencimiento.textContent = "Fecha no valida.";
+        errorVencimiento.textContent = "Fecha no válida.";
         errorVencimiento.style.display = "block";
     }
 
@@ -51,7 +55,7 @@ function validarDatos() {
         contadorBuenas++;
         errorCvv.style.display = "none";
     } else {
-        errorCvv.textContent = "Codigo no valido.";
+        errorCvv.textContent = "Código no válido.";
         errorCvv.style.display = "block";
     }
 
@@ -59,7 +63,11 @@ function validarDatos() {
         contadorBuenas++;
         errorTelefono.style.display = "none";
     } else {
-        errorTelefono.textContent = "Numero no valido.";
+        if (telefonoT.includes("-")) {
+            errorTelefono.textContent = "El formato es incorrecto.";
+        } else if (telefonoT.length != 10) {
+            errorTelefono.textContent = "El número de teléfono consta de 10 dígitos.";
+        }
         errorTelefono.style.display = "block";
     }
 
