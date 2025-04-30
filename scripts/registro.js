@@ -90,8 +90,6 @@ function validarDatos() {
 }
 
 //Este aqui, no lo ocupo en otro lado
-
-
 function desactivarMensajeCreado() {
     cuentaCreada.style.display = "none";
 }
